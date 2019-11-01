@@ -64,6 +64,6 @@ public  class ImageResizer extends Thread {
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
-            System.out.println("Duration: " + (System.currentTimeMillis() - start));
+            System.out.println("Duration: " + Thread.currentThread().getName() + " => " + (System.currentTimeMillis() - start));
         }
     }
